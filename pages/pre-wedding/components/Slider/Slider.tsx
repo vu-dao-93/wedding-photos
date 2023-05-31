@@ -1,4 +1,4 @@
-import { PhotoInfo } from "@/libs/api/firebase-photos";
+import { PhotoInfo } from "@/libs/firebase/photos";
 import React from "react";
 import ImageSlider from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";

@@ -1,7 +1,6 @@
-import { fetchBlob } from "@/libs/api/firebase-photos";
+import { fetchBlob } from "@/libs/firebase/photos";
 import { DownloadSimple } from "@phosphor-icons/react";
 import React from "react";
-import styles from "./DownloadButton.module.css";
 
 interface Props {
   name: string;

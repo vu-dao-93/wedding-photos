@@ -1,5 +1,11 @@
-import { ref, list, getDownloadURL, getBlob } from "firebase/storage";
-import storage from "../firebase/storage";
+import {
+  ref,
+  list,
+  getDownloadURL,
+  getBlob,
+  uploadBytes,
+} from "firebase/storage";
+import storage from "./storage";
 
 const minPhotosRef = ref(storage, "/min");
 

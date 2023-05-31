@@ -39,4 +39,4 @@ next-env.d.ts
 cloud-storage.config.json
 
 # photos
-/wedding-photos/**/*.jpg
+/wedding-photos/photos/**

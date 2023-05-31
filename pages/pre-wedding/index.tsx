@@ -1,7 +1,6 @@
 import React from "react";
 import { Inter } from "@next/font/google";
-import styles from "./PreWedding.module.css";
-import { fetchPhotos, PhotoInfo } from "@/libs/api/firebase-photos";
+import { fetchPhotos, PhotoInfo } from "@/libs/firebase/photos";
 import PhotoGrid from "./components/PhotoGrid";
 import Slider from "./components/Slider";
 
@@ -22,7 +21,7 @@ export async function getStaticProps() {
 
 export default function PreWedding({ photos }: PreWeddingProps) {
   return (
-    <div className={styles.contentArea}>
+    <div className="max-w-screen-lg mx-auto my-12 px-4 py-0">
       <h1 className={inter.className}>Pre-wedding</h1>
       <Slider photos={photos} />
       <PhotoGrid photos={photos} />

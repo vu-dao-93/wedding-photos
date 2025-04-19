@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "allowImportingTsExtensions": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -15,10 +16,20 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
+    "erasableSyntaxOnly": true,
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "wedding-photos/api/constants.mts",
+    "wedding-photos/compress-photos.mts",
+    "wedding-photos/api/cloud-storage.mts",
+    "wedding-photos/api/upload-file.mts",
+    "wedding-photos/upload-photos.mts"
+  ],
   "exclude": ["node_modules"]
 }

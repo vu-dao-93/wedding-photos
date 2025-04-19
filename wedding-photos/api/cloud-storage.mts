@@ -9,7 +9,3 @@ export async function fetchStorage() {
 
   return storage;
 }
-
-export async function fetchBucket() {
-  return (await fetchStorage()).bucket("wedding-photos-vu-pa");
-}
